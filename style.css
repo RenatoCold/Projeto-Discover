@@ -31,6 +31,7 @@ body {
   background-size: cover; /*cobrir todo o espaço visível*/
 
   background: var(--bg-url) top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -40,7 +41,7 @@ body * {
 
 #container {
   width: 100%; /*largura*/
-  max-width: 540px;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
   display: flex;
@@ -173,6 +174,14 @@ footer {
   font-size: 16px;
 }
 
+/* media queries */
 
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
 
-
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
